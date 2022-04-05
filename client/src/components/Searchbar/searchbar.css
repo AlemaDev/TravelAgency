@@ -1,0 +1,20 @@
+.search-bar {
+    display: inline;
+    align-items: center;
+    padding: 2em 0em;
+}
+
+.search-bar input {
+    padding: 12px 20px;
+    width: 80%;
+}
+
+.search-bar button {
+    background-color: rgb(0, 27, 177);
+    color: white;
+    padding: 12px 20px;
+    width: 15%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

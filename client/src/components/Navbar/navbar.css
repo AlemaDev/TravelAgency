@@ -1,0 +1,63 @@
+.mainHeader {
+  background-color: white;
+  border-bottom: 2px solid rgb(0, 27, 177);
+  width: 100%;
+}
+
+
+.header-logo {
+  display: flex;
+}
+
+.header-name {
+  color: rgb(0, 27, 177);
+}
+
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  /* width: 7%;
+  height: auto; */
+  border-radius: 40%;
+}
+
+.gestion-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.gestion {
+  color: white;
+  background-color: gray;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 24px;
+  margin: 0;
+  padding: 0px 24px;
+  box-sizing: border-box;
+  height: 48px;
+  justify-content: space-between;
+}
+
+.gestion a {
+  padding: 0px 10px;
+}
+
+.products-list{
+  margin: 0;
+  display: flex;
+}
+
+.products-list a { 
+  justify-content: center;
+  display: block;
+  padding: 14px 10px;
+  color: rgb(0, 27, 177);
+}
+
+.products-list a:hover {
+  background-color: rgb(230, 243, 255);
+}

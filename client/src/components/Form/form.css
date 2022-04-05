@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0em 2em;
+    border-radius: 5px;
+    background-color: rgb(220, 224, 246);
+    padding: 20px;
+}
+
+
+
+.container input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+.container button {
+    background-color: rgb(0, 27, 177);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#delete-button {
+    margin-top: 1em;
+    background-color:rgb(223, 0, 0);
+}
