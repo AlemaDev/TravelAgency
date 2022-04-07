@@ -16,7 +16,7 @@ const Form = ({ currentId, setCurrentId }) => {
     }, [product]);
 
     const verifyIfEmpty = () => {
-        return productData.title && productData.description &&
+        return productData.type && productData.title && productData.description &&
         productData.selectedFile && productData.tags;
     }
 
