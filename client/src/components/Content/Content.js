@@ -14,7 +14,9 @@ const Content = ({currentId, setCurrentId}) => {
 
   useEffect(() => {
     const type = location.replace('/','');
-    dispatch(getProducts(type));
+    if(type) {
+      dispatch(getProducts(type));
+    }
   }, [location, dispatch]);
 
 
