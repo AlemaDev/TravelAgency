@@ -2,6 +2,7 @@ import React from "react";
 import {useDispatch} from "react-redux";//esto lo voy a dejar aca para cuando habilite las opciones de borrar y editar
 
 import {deleteProduct} from '../../../actions/products';
+import {updateProduct} from '../../../actions/products';
 import './products.css';
 
 const Products = ({product, setCurrentId}) => {
