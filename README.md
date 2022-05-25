@@ -3,7 +3,6 @@ A travel agency website i'm working on using the MERN stack
 
 ## To work now:
 ```
--(BUG)sometimes the form component sends an empty type for the product
 -i need to add the update product option
 -add an authentication system with users and admins
 ```
