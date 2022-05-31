@@ -3,7 +3,6 @@ A travel agency website i'm working on using the MERN stack
 
 ## To work now:
 ```
--i need to add the update product option
 -add an authentication system with users and admins
 ```
 ## Old stuff fixed:
