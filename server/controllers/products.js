@@ -48,5 +48,5 @@ export const deleteProduct = async (req, res) => {
     const { id: _id } = req.params;
     if(!mongoose.Types.ObjectId.isValid(_id)) return res.status(404).send("There's no product with that id");
     await ProductSchema.findByIdAndRemove(_id);
-    res.json({ message: "the product has been deleted" });
+    res.json({ message: "The product has been deleted" });
 }
