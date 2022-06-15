@@ -4,7 +4,7 @@ A travel agency website i'm working on using the MERN stack
 ## To work now:
 ```
 -add an authentication system with users and admins
--replace old css with chakraUI
+-replace old css with Tailwind
 ```
 ## Old stuff fixed:
 ```

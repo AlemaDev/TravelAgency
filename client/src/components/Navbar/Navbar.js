@@ -15,7 +15,7 @@ const Navbar = () => {
                 </div>
                 <div className="gestion-container">
                     <ul className="gestion">
-                        <Link to={`/`}><li>Iniciar Sesion</li></Link>
+                        <Link to={`/Auth`}><li>Iniciar Sesion</li></Link>
                         <Link to={`/`}><li>Mis Viajes</li></Link>
                         <Link to={`/`}><li>Ayuda</li></Link>
                     </ul>

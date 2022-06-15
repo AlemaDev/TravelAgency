@@ -7,6 +7,7 @@ import Navbar from './components/Navbar/Navbar';
 import SearchBar from './components/Searchbar/SearchBar';
 import Form from './components/Form/Form';
 import {getProducts} from './actions/products';
+import Auth from "./components/Auth/Auth";
 
 
 const App = () => {
@@ -27,6 +28,9 @@ const App = () => {
         <Switch>
           <Route path="/add">
             <Form/>
+          </Route>
+          <Route path="/auth">
+            <Auth/>
           </Route>
           <Route path="/">
             <Content currentId={currentId} setCurrentId={setCurrentId}/>
