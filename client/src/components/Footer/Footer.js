@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-200">
+        <footer className="bg-gray-200 bottom-0 left-0 w-full rounded-md">
             <div className=" flex justify-between ">
                 <div className="flex-col">
                     <ul>
@@ -38,7 +38,7 @@ const Footer = () => {
                     </select>
                 </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center font-bold">
                 <p>2022a.c. - 2022, Travel-Agency.com AleMaDev S.A. Todos los derechos reservados.</p>
             </div>
         </footer>

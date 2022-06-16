@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Content from './components/Content/Content';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
-import SearchBar from './components/Searchbar/SearchBar';
+import SearchBar from './components/Navbar/Searchbar/SearchBar';
 import Form from './components/Form/Form';
 import {getProducts} from './actions/products';
 import Auth from "./components/Auth/Auth";
@@ -12,19 +12,12 @@ import Auth from "./components/Auth/Auth";
 
 const App = () => {
   const [currentId, setCurrentId] = useState(null);
-  const [search, setSearch] = useState ('');
-
-
 
 
   return(
     <Router>
-      <div className="App">
+      <div className="App flex flex-col h-screen">
         <Navbar />
-        <SearchBar
-          search={search}
-          setSearch={setSearch}
-        />
         <Switch>
           <Route path="/add">
             <Form/>

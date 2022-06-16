@@ -1,7 +1,7 @@
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import { alojamientos, vuelos, paquetes, ofertas, actividades, autos, asistencias, traslados } from '../../constants/itemsTypes';
-
+import  SearchBar from "./Searchbar/SearchBar";
 
 const Navbar = () => {
     return (
@@ -34,6 +34,7 @@ const Navbar = () => {
                     <Link to={`/add`}><li>Agregar producto</li></Link>
                 </ul>
             </div>
+        <SearchBar />
         </nav>
     );
 };
