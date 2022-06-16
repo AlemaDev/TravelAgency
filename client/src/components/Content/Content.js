@@ -22,15 +22,11 @@ const Content = ({currentId, setCurrentId}) => {
 
   return (
         <div className="content-wrapper">
-          {products.length ? (
-              products.map((product) => (
+              {products.map((product) => (
                 <div className="product" key={product._id}>
                   <Products product={product} setCurrentId={setCurrentId}/>
                 </div>
-              ))
-          ) : (
-            <img id="welcomeImage" src={require('../../images/travelAgency.png')} />
-          )}
+              ))}
         </div>
       );
 };

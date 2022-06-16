@@ -4,7 +4,8 @@ import React, { useState } from 'react'
 const Auth = () => {
   const [ newAccount , setNewAccount ] = useState(false);
   
-  const handleSignOrLog = () => {
+  const handleSignOrLog = (e) => {
+    e.preventDefault();
     setNewAccount(!newAccount);
     console.log(newAccount);
   };
@@ -42,7 +43,7 @@ const Auth = () => {
                     )}
                     <div className="flex items-baseline justify-between">
                         <button className="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">{!newAccount ? 'Sign in' : 'Log in'}</button>
-                        <button href="#" className="text-sm text-blue-600 hover:underline" onClick={ handleSignOrLog }>{ newAccount ? 'Crear cuenta' : 'Iniciar sesion' }</button>
+                        <button className="text-sm text-blue-600 hover:underline" onClick={ handleSignOrLog }>{ newAccount ? 'Crear cuenta' : 'Iniciar sesion' }</button>
                     </div>
                 </div>
             </form>

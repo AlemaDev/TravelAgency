@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import productRoutes from './routes/products.js';
+import authRoutes from './routes/auth.js';
 
 const app = express();
 dotenv.config();
@@ -15,6 +16,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true}));
 app.use(cors());
 
 app.use('/products', productRoutes);
+app.use("/auth", authRoutes);
 
 app.get('/', (req, res) => {
     res.send('hello to travelAgency');
