@@ -1,7 +1,7 @@
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
-import UserSchema from "../models/userSchema";
+import UserSchema from "../models/userSchema.js";
 
 const secretCode = 'secreto';
 

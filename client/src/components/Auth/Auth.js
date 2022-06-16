@@ -11,8 +11,8 @@ const Auth = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="px-20 py-6 mt-2 text-left bg-white shadow-lg">
+    <div className="flex items-center justify-center min-h-screen">
+        <div className="px-20 py-6 mt-2 mb-6 text-left bg-white shadow-lg">
             <h3 className="text-2xl font-bold text-center">{ newAccount ? 'Iniciar sesion' : 'Crear cuenta'}</h3>
             <form action="">
                 <div className="mt-4">
