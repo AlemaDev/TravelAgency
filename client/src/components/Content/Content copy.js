@@ -21,9 +21,9 @@ const Content = ({currentId, setCurrentId}) => {
 
 
   return (
-        <div className="flex  my-6 mx-4">
+        <div className="content-wrapper flex-grow">
               {products.map((product) => (
-                <div key={product._id}>
+                <div className="product" key={product._id}>
                   <Products product={product} setCurrentId={setCurrentId}/>
                 </div>
               ))}

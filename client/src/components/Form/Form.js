@@ -7,7 +7,7 @@ import { createProduct, updateProduct } from '../../actions/products';
 import './form.css';
 
 const Form = ({ currentId, setCurrentId }) => {
-    const [productData, setProductData] = useState({ type: '', title: '', description: '', tags: '', selectedFile: '' , price: 0 });
+    const [productData, setProductData] = useState({ type: alojamientos, title: '', description: '', tags: '', selectedFile: '' , price: 0 });
     const product = useSelector((state) => currentId ? state.products.find((p) => p._id === currentId) : null);
     const dispatch = useDispatch();
 
