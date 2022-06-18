@@ -1,3 +1,4 @@
+import React from 'react'
 import './searchbar.css';
 
 const SearchBar = ({search, setSearch}) => {

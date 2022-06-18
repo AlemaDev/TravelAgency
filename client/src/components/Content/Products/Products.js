@@ -7,9 +7,9 @@ import {updateProduct} from '../../../actions/products';
 const Products = ({product, setCurrentId}) => {
   const dispatch = useDispatch();
   return(
-    <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md mx-2">
+    <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md mx-2 my-2">
     <a href="#">
-    {product.selectedFile ? <img className="rounded-t-lg h-60 w-100" src={`data:image/png;base64${product.selectedFile}`}/>: ''}
+    {product.selectedFile ? <img className="rounded-t-lg h-80 w-100" src={`data:image/png;base64${product.selectedFile}`}/>: ''}
     </a>
     <div className="p-5">
         <a href="#">

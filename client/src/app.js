@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 import Content from './components/Content/Content';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
-import SearchBar from './components/Navbar/Searchbar/SearchBar';
 import Form from './components/Form/Form';
-import {getProducts} from './actions/products';
 import Auth from "./components/Auth/Auth";
 
 
 const App = () => {
-  const [currentId, setCurrentId] = useState(null);
-
 
   return(
     <Router>
@@ -26,7 +22,7 @@ const App = () => {
             <Auth/>
           </Route>
           <Route path="/">
-            <Content currentId={currentId} setCurrentId={setCurrentId}/>
+            <Content />
           </Route>
         </Switch>
         <Footer />

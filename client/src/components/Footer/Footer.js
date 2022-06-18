@@ -1,7 +1,8 @@
+import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-200 bottom-0 left-0 w-full rounded-sm">
+        <footer className="bg-gray-200 w-full rounded-sm bottom-auto ">
             <div className=" flex justify-between ">
                 <div className="flex-col">
                     <ul>
