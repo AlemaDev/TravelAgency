@@ -23,6 +23,7 @@ const Products = ({product, setCurrentId}) => {
           </a>
           <p>${product.price}</p>
         </div>
+        <button onClick={() => dispatch(deleteProduct(product._id))}>Delete</button>
     </div>
 </div>
   )

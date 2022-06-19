@@ -11,7 +11,8 @@ const Navbar = () => {
                 <div className="header-logo">
                     <img className="logo-image" src={require('./images/logo.png')} alt={"a logo portraying an aeroplane"} />
                     <Link to={`/`}>
-                        <h2 className="header-name">TravelAgency</h2>
+                        <h6 className="header-name">Travel</h6>
+                        <h6 className="header-name">   Agency</h6>
                     </Link>
                 </div>
                 <div className="gestion-container">

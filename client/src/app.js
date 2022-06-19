@@ -13,7 +13,6 @@ const App = () => {
   return(
     <Router>
       <div className="App flex flex-col h-screen">
-        <Navbar />
         <Switch>
           <Route path="/add">
             <Form/>
@@ -22,10 +21,11 @@ const App = () => {
             <Auth/>
           </Route>
           <Route path="/">
+            <Navbar />
             <Content />
+            <Footer />
           </Route>
         </Switch>
-        <Footer />
       </div>
     </Router>
   );

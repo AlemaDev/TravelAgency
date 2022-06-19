@@ -35,3 +35,9 @@
     margin-top: 1em;
     background-color:rgb(223, 0, 0);
 }
+
+.input-file input[type="file" i]::-webkit-file-upload-button{
+    outline: none;
+    color: white;
+    background-color: green;
+  }

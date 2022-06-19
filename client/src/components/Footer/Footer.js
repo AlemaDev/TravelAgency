@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="bg-gray-200 w-full rounded-sm bottom-auto ">
             <div className=" flex justify-between ">
-                <div className="flex-col">
+                <div className="flex-col ml-2">
                     <ul>
                         <li className="font-bold">Travel-Agency</li>
                         <li>
@@ -29,7 +29,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="flex-col">
+                <div className="flex-col mr-8">
                     <p className="font-bold">Navegar En El Sitio De:</p>
                     <select id="select-country">
                         <option value="argentina">Argentina</option>
