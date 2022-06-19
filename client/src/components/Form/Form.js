@@ -44,10 +44,10 @@ const Form = ({ currentId, setCurrentId }) => {
     <div>
         <span><Link to={'/'}><img className="logo-image" src={require('../../images/arrow.png')} alt={"return to previous page"} /></Link></span>
             <div className='flex items-center justify-center min-h-screen bg'>
-                <form className='px-20 py-6 mt-2 mb-6 text-left bg-gray-100 shadow-lg' autoComplete="off" noValidate>
+                <form className='px-20 py-6 mt-2 mb-6 text-left bg-white shadow-lg' autoComplete="off" noValidate>
                     <label>Tipo:</label><br/>
                     <select 
-                            className='w-full'
+                            className='w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600'
                             name="type"
                             value={productData.type}
                             onChange={(e) => setProductData({ ...productData, type: e.target.value })}
