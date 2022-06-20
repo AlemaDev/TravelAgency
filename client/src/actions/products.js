@@ -11,6 +11,15 @@ export const getProducts = (product) => async (dispatch) => {
     }
 };
 
+export const findProducts = (product) => async (dispatch) => {
+    try {
+        const { data } = await api.fetchSearchedProducts(product);
+        dispatch({ type: FETCH, payload: data });
+    } catch (error) {
+        console.log(error);
+    }
+};
+
 export const createProduct = (product) => async (dispatch) => {
     try {
         const { data } = await api.createProduct(product);

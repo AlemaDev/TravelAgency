@@ -15,11 +15,22 @@ export const getProducts = async (req, res) => {
     }
 }
 
-export const getProduct = async (req, res) => { 
-    const { id } = req.params;
+// export const getProduct = async (req, res) => { 
+//     const { id } = req.params;
+//     try {
+//         const product = await ProductSchema.findById(id);
+//         res.status(200).json(product);
+//     } catch (error) {
+//         res.status(404).json({ message: error.message });
+//     }
+// }
+
+export const findProducts = async (req, res) => { 
+    const { product } = req.params;
     try {
-        const product = await ProductSchema.findById(id);
-        res.status(200).json(product);
+        const productByName = await ProductSchema.find({ title: `${product}`});
+        const productByDescription = await ProductSchema.find({ description: `${product}`});
+        res.status(200).json( productByName, productByDescription );
     } catch (error) {
         res.status(404).json({ message: error.message });
     }

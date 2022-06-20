@@ -1,12 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './searchbar.css';
+import { findProducts } from '../../../actions/products';
 
-const SearchBar = ({search, setSearch}) => {
+const SearchBar = () => {
+const [search, setSearch] = useState('');
+const [productData, setProductData] = useState({ type: '', title: '', description: '', tags: '', selectedFile: '' , price: 0 });
+
+const handleSearch = (e) => {
+    setProductData({title: search, description: search})
+    if(search) {
+        findProducts(productData);
+    }
+    e.preventDefault();
+}
 
     return (
-        <form className='search-bar' onSubmit={(e) => e.preventDefault()}>
+        <form className='search-bar' onSubmit={handleSearch}>
             <input
-                autoFocus
                 id='SearchBar'
                 type='text'
                 role='searchbox'
