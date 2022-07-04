@@ -1,31 +1,37 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux';
 import './searchbar.css';
 import { findProducts } from '../../../actions/products';
+import { useHistory } from 'react-router-dom';
 
 const SearchBar = () => {
-const [search, setSearch] = useState('');
-const [productData, setProductData] = useState({ type: '', title: '', description: '', tags: '', selectedFile: '' , price: 0 });
+    const dispatch = useDispatch();
+    const history = useHistory();
+    const [search, setSearch] = useState('');
 
-const handleSearch = (e) => {
-    setProductData({title: search, description: search})
-    if(search) {
-        findProducts(productData);
-    }
+    const handleSearch = (e) => {
     e.preventDefault();
-}
+    // const search = e.target.value;
+    if(search) {
+        history.push(`/search/${search}`);
+        dispatch(findProducts(search));
+    }
+    console.log(search);
+    }
 
     return (
-        <form className='search-bar' onSubmit={handleSearch}>
+        <form className='search-bar' onSubmit={handleSearch} >
             <input
                 id='SearchBar'
                 type='text'
                 role='searchbox'
                 placeholder='Search...'
-                value={search}
+                defaultValue={search}
                 onChange={(e) => setSearch(e.target.value)}
             />
             <button
                 type='submit'
+                value='Submit'
             >
             Buscar
             </button>

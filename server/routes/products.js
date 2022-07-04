@@ -5,7 +5,7 @@ import { getProducts, createProduct, deleteProduct, findProducts } from '../cont
 const router = express.Router();
 
 router.get('/:product', getProducts);
-router.get('/:productSearch', findProducts);
+router.get('/search/:product', findProducts);
 router.post('/add', createProduct);
 router.delete('/:id', deleteProduct);
 

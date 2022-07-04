@@ -29,8 +29,7 @@ export const findProducts = async (req, res) => {
     const { product } = req.params;
     try {
         const productByName = await ProductSchema.find({ title: `${product}`});
-        const productByDescription = await ProductSchema.find({ description: `${product}`});
-        res.status(200).json( productByName, productByDescription );
+        res.status(200).json( productByName );
     } catch (error) {
         res.status(404).json({ message: error.message });
     }
