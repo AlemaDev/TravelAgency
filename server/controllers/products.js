@@ -28,7 +28,7 @@ export const getProducts = async (req, res) => {
 export const findProducts = async (req, res) => { 
     const { product } = req.params;
     try {
-        const productByName = await ProductSchema.find({ title: `${product}`});
+        const productByName = await ProductSchema.find({ title: { $regex: `${product}`, $options: "i" }});
         res.status(200).json( productByName );
     } catch (error) {
         res.status(404).json({ message: error.message });
